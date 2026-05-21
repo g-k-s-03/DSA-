@@ -19,7 +19,7 @@ class Solution {
         // Code here
         int count = 0;
         while (n>0){
-            n = n /10;S
+            n = n /10;
             count = count +1 ;
             
         }
