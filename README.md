@@ -1,4 +1,5 @@
 # DSA- I will be posting my daily solved problems on LeetCode  and my learning
+<<<<<<< HEAD
 ## basic maths
 | Platform | Problem | Issue/Problem # |  
 |----------|---------|----------------|  
@@ -14,3 +15,5 @@
 | **LeetCode** | Perfect Number | **#507** |  
 
 
+=======
+>>>>>>> parent of 650cd1a (solved count number gfg)
