@@ -16,7 +16,27 @@ no need to find which number is larger and which is smaller because the algorith
 
 
 /*  code*/
+class Solution {
+public:
+    vector<int> lcmAndGcd(int a, int b) {
+        int num1 = a;
+        int num2 = b;
 
+        // Find GCD
+        while (b != 0) {
+            int rem = a % b;
+            a = b;
+            b = rem;
+        }
+
+        int gcd = a;
+
+        // Find LCM
+        int lcm = (num1 / gcd) * num2;
+
+        return {lcm, gcd};
+    }
+};
 
 
 
