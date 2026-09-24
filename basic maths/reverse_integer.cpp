@@ -4,6 +4,7 @@ Assume the environment does not allow you to store 64-bit integers (signed or un
 
  
 
+
 Example 1:
 
 Input: x = 123
@@ -12,4 +13,22 @@ Example 2:
 
 Input: x = -123
 Output: -321*/
+
+class Solution {
+public:
+    int reverse(int x) {
+        long long rev = 0;
+
+        while (x != 0) {
+            int dig = x % 10;
+            x /= 10;
+            rev = rev * 10 + dig;
+        }
+
+        if (rev > INT_MAX || rev < INT_MIN)
+            return 0;
+
+        return rev;
+    }
+};
 
